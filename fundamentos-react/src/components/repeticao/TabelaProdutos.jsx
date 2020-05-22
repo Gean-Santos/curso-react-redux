@@ -19,12 +19,14 @@ export default props => {
   return (
     <div style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <table>
-        <tbody>
+        <thead>
           <tr>
             <th>ID</th>
             <th>Produto</th>
             <th>Preço</th>
           </tr>
+        </thead>
+        <tbody>
           {produtosMap}
         </tbody>
       </table>
