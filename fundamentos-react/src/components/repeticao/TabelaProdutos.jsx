@@ -17,7 +17,7 @@ export default props => {
   });
 
   return (
-    <div style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <div>
       <table>
         <thead>
           <tr>
