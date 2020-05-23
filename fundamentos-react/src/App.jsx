@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'
 
+import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaPrecos from './components/repeticao/TabelaProdutos';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
@@ -16,11 +17,16 @@ export default () => (
     <h1>Fundamentos React</h1>
     <div className="Cards">
 
-    <Card title="#7 - Desafio de Repeticao" color="#800080">
+      
+      <Card title="#8 - Par ou Ímpar" color="#982395">
+        <ParOuImpar numero={5} />
+      </Card>
+
+      <Card title="#7 - Desafio de Repeticao" color="#00F">
         <TabelaPrecos />
       </Card>
 
-      <Card title="#6 - Lista de Alunos" color="#00FFFF">
+      <Card title="#6 - Lista de Alunos" color="#08F">
         <ListaAlunos />
       </Card>
 

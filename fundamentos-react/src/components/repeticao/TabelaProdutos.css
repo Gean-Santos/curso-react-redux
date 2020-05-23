@@ -1,0 +1,23 @@
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+table {
+  margin:auto;
+  width: 95%;
+}
+table thead {
+  background-color: indigo;
+  color: azure;
+}
+table tbody tr td  {
+  border: 3px solid black;
+}
+table tbody .Par {
+  background-color: aqua;
+}
+table tbody .Impar {
+  
+  background-color: blue;
+  color: azure;
+}
