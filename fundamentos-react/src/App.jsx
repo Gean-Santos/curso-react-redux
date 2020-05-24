@@ -16,8 +16,6 @@ export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
-
-      
       <Card title="#8 - Par ou Ímpar" color="#982395">
         <ParOuImpar numero={5} />
       </Card>
