@@ -20,7 +20,7 @@ export default props => {
         <span>{idade} </span>
         <span>{nerd ? 'Verdadeiro' : 'Falso'}</span>
         </div>
-      <IndiretaFilho quandoClicar={fornecerInformacaoes}></IndiretaFilho>
+      <IndiretaFilho quandoClicar={fornecerInformacaoes} />
     </div>
   );
 }
