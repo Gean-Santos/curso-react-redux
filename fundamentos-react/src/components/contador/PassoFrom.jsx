@@ -10,6 +10,6 @@ export default props => {
         value={props.passo}
         onChange={e => props.setPasso(+e.target.value)}
       />
-  </div>
+    </div>
   );
 }
