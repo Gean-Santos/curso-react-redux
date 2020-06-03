@@ -5,7 +5,7 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <PageHeader nome='Tarefas' small='Cadastro' />
+        <PageHeader name='Tarefas' small='Cadastro' />
       </div>
     );
   }
