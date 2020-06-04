@@ -11,9 +11,14 @@ export default class Grid extends Component {
     if(cols[3]) classes += `col-md-${cols[3]}`;
 
     return classes;
-  }
+  };
 
   render() {
-
+    const gridClasses = this.toCssClasses(this.props.cols || 12);
+    return (
+      <div className={gridClasses}>
+        {this.props.children}
+      </div>
+    )
   };
 }
