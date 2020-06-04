@@ -17,13 +17,21 @@ export default class extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleAdd = this.handleAdd.bind(this);
+
+    this.refresh();
+  }
+
+  refresh() {
+    axios.get(`${URL}?sort=-createdAt`)
+      .then(resp => this.setState({...this.state, description: '', list: resp.data}));
   }
 
   handleAdd() {
     const description = this.state.description;
     axios.post(URL, {description})
-      .then(resp => console.log('Funcionou!' + [JSON.stringify(resp)]));
+      .then(resp => this.refresh());
   }
+
 
   handleChange(e) {
     this.setState({...this.state, description: e.target.value});
@@ -37,7 +45,7 @@ export default class extends Component {
           description={this.state.description} 
           handleChange={this.handleChange}
         />
-        <TodoList />
+        <TodoList list={this.state.list}/>
       </div>
     );
   }
