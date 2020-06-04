@@ -18,6 +18,7 @@ export default class extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleAdd = this.handleAdd.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
+    this.handleClear = this.handleClear.bind(this);
 
     this.handleRemove = this.handleRemove.bind(this);
     this.handleMarkAsDone = this.handleMarkAsDone.bind(this);
@@ -61,6 +62,10 @@ export default class extends Component {
       .then(resp => this.refresh(this.state.description));
   }
 
+  handleClear() {
+    this.refresh();
+  }
+
   render() {
     return (
       <div>
@@ -69,6 +74,7 @@ export default class extends Component {
           description={this.state.description} 
           handleChange={this.handleChange}
           handleSearch={this.handleSearch}
+          handleClear={this.handleClear}
         />
         <TodoList list={this.state.list} 
           handleMarkAsDone={this.handleMarkAsDone}
