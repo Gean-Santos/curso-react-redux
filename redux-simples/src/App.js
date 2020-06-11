@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Card from './components/Card';
@@ -15,7 +14,6 @@ function App() {
         <Card></Card>
       </div>
       <div className="linha">
-        <Card></Card>
         <Card></Card>
         <Card></Card>
         <Card></Card>
