@@ -3,5 +3,30 @@
   display: flex;
   flex-direction: column;
   margin: 5px;
-  background-color: red;
 }
+
+.Card .Header {
+  display: flex;
+  justify-content: center;
+}
+
+.Card .Header .Title {
+  flex: 1;
+  padding: 5px;
+}
+
+.Card .Content {
+  padding: 20px;
+}
+
+.Card.Red .Header { background-color: #C62628; color: #FFF; }
+.Card.Red .Content { background-color: #F44336; }
+
+.Card.Green .Header { background-color: #2E7D32; color: #FFF; }
+.Card.Green .Content { background-color: #4CAF50; }
+
+.Card.Blue .Header { background-color: #1565C0; color: #FFF; }
+.Card.Blue .Content { background-color: #2196F3; }
+
+.Card.Purple .Header { background-color: #6A1BDD; color: #FFF; }
+.Card.Purple .Content { background-color: #9C27B0; }
