@@ -5,7 +5,6 @@ import Card from './Card';
 
 function Media(props) {
   const { min, max } = props;
-  console.log(props);
   return (
     <Card title="Média dos Números" green>
       <div>  

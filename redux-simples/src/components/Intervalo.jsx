@@ -20,7 +20,8 @@ function Intervalo(props){
         <span>
           <strong>Máximo:</strong>
           <input type="number" value={max} 
-            onChange={e => props.alterarMaximo(+e.target.value)}/>
+            onChange={e => props.alterarMaximo(+e.target.value)}
+          />
         </span>
       </div>
     </Card>
@@ -42,6 +43,7 @@ function mapDispatchToProp(dispatch) {
       dispatch(action);
     },
     alterarMaximo(novoNumero) {
+      // action creator => action
       const action = alterarNumeroMaximo(novoNumero);
       dispatch(action);
     }
