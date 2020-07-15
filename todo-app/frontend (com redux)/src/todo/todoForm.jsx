@@ -26,7 +26,7 @@ class TodoForm extends Component {
   }
 
   render() {
-    const { add, search, description } = this.props;
+    const { add, search, description, clear } = this.props;
     return (
       <div role="form" className="todoForm">
         <Grid cols='12 9 10'>
@@ -45,7 +45,7 @@ class TodoForm extends Component {
             onClick={() => search()}
           />
           <IconButton style="default" icon="close" 
-            onClick={this.props.clear}
+            onClick={() => clear()}
           />
         </Grid>
       </div>
